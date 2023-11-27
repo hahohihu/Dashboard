@@ -98,11 +98,18 @@ main {
 
     & > * {
         border: solid black;
+        padding: 20px;
+    }
+
+    & .card {
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 1px 1px 3px 1px rgba(125, 125, 125, 0.267);
     }
 
     & #projects {
         grid-area: projects;
-        padding: 20px;
         
         & #project-container {
             display: grid;
@@ -111,9 +118,6 @@ main {
         }
 
         & .card {
-            background-color: white;
-            border-radius: 5px;
-            padding: 10px;
             border-left: 5px solid var(--flair-color);
         }
     }

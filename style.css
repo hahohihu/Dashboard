@@ -39,6 +39,8 @@ main {
 
 svg {
     fill: currentColor;
+    height: 40px;
+    width: 40px;
 }
 
 ul {
@@ -102,6 +104,15 @@ nav {
             transform: scale(0.6);
         }
     }
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "search personal"
+        "greeting interact";
 }
 
 main {

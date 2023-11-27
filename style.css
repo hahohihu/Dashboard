@@ -102,6 +102,20 @@ main {
 
     & #projects {
         grid-area: projects;
+        padding: 20px;
+        
+        & #project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        & .card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 10px;
+            border-left: 5px solid var(--flair-color);
+        }
     }
 
     & #announcements {
@@ -111,4 +125,5 @@ main {
     & #trending {
         grid-area: trending;
     }
+
 }

@@ -1,5 +1,9 @@
 html {
     font-family: arial;
+    --nav-color: #1c94d3;
+    --foreground-color: white;
+    --middle-color: #e2e8f0;
+    --flair-color: #f0b429;
 }
 
 body {
@@ -15,8 +19,8 @@ body {
 }
 
 nav {
-    background: #1c94d3;
-    color: white;
+    background: var(--nav-color);
+    color: var(--foreground-color);
     grid-area: nav;
 }
 
@@ -25,7 +29,7 @@ header {
 }
 
 main {
-    background: #e2e8f0;
+    background: var(--middle-color);
     grid-area: main;
 }
 
@@ -37,6 +41,15 @@ nav {
     & > * {
         margin: 0;
         padding: 15px 50px 15px 15px;
+    }
+
+    & a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    & a:hover {
+        backdrop-filter: brightness(85%);
     }
 
     & #title {

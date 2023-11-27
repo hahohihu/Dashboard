@@ -29,31 +29,34 @@ main {
     grid-area: main;
 }
 
-nav > * {
-    margin: 0;
-    padding: 15px 50px 15px 15px;
-}
-
-#title {
-    display: flex;
-    align-items: center;
-    font-size: 1.5em;
-}
-
-#title svg {
-    height: 1.8em;
-    width: 1.8em;
-    padding-right: 5px;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    padding: 5px;
-}
-
 svg {
     fill: currentColor;
 }
+
+nav {
+    & > * {
+        margin: 0;
+        padding: 15px 50px 15px 15px;
+    }
+
+    & #title {
+        display: flex;
+        align-items: center;
+        font-size: 1.5em;
+
+        & svg {
+            height: 1.8em;
+            width: 1.8em;
+            padding-right: 5px;
+        }
+    }
+
+    & ul {
+        list-style: none;
+
+        & li {
+            padding: 5px;
+        }
+    }
+}
+

@@ -6,6 +6,11 @@ html {
     --flair-color: #f0b429;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     display: grid;
     grid-template-columns: max-content auto;
@@ -15,7 +20,6 @@ body {
         "nav main";
 
     min-height: 100vh;
-    margin: 0;
 }
 
 nav {
@@ -39,7 +43,6 @@ svg {
 
 ul {
     list-style: none;
-    padding: 0;
 }
 
 h1,
@@ -48,23 +51,17 @@ h3,
 h4 {
     font-weight: 700;
     margin: 2px;
-    padding: 0;
 }
 
 p {
     font-weight: 400;
     margin: 2px;
-    padding: 0;
 }
 
 nav {
     display: flex;
     flex-direction: column;
     font-weight: 500;
-
-    &>* {
-        padding: 0;
-    }
 
     & :last-child {
         margin-top: auto;

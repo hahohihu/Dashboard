@@ -51,9 +51,9 @@ nav {
         align-items: center;
 
         & svg {
-            height: 1.8em;
-            width: 1.8em;
-            padding-right: 5px;
+            height: 40px;
+            width: 40px;
+            padding-right: 10px;
         }
     }
 
@@ -72,6 +72,11 @@ nav {
 
         & li {
             padding: 0;
+            font-size: 1.1em;
+        }
+
+        & svg {
+            transform: scale(0.6);
         }
     }
 }

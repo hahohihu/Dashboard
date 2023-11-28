@@ -14,7 +14,7 @@ html {
 body {
     display: grid;
     grid-template-columns: max-content auto;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: auto 6fr;
     grid-template-areas:
         "nav header"
         "nav main";
@@ -110,13 +110,13 @@ header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 10px 40px;
+    margin: 10px 60px;
     column-gap: 20px;
 
     & > * {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
     }
 
     & svg {
@@ -132,6 +132,24 @@ header {
         border: 0;
     }
 
+    & #personal {
+        justify-content: flex-end;
+    }
+
+    & #greeting {
+        & p {
+            font-weight: 700;
+        }
+
+        & #greeting-text {
+            font-size: 0.9em;
+        }
+
+        & #username {
+            font-size: 1.5em;
+        }
+    }
+
     & #interact {
         justify-content: flex-end;
         & button {
@@ -139,7 +157,7 @@ header {
             color: white;
             border: 0;
             border-radius: 30px;
-            height: 60%;
+            height: 2.5em;
             font-weight: 700;
             width: 7em;
         }

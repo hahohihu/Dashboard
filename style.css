@@ -110,9 +110,6 @@ header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "search personal"
-        "greeting interact";
     margin: 10px 40px;
 
     & > * {

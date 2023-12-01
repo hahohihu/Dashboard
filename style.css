@@ -48,9 +48,16 @@ ul {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-weight: 700;
     margin: 0.2em;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+    border: 1px solid rgb(232, 232, 232);
 }
 
 p {
@@ -226,6 +233,20 @@ main {
 
     & #announcements {
         grid-area: announcements;
+
+        & .announcement {
+            padding: 8px;
+        }
+
+        & p {
+            color: rgb(105, 105, 105);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 0.9em;
+        }
     }
 
     & #trending {

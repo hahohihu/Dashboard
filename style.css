@@ -124,7 +124,7 @@ header {
     margin: 10px 40px;
     column-gap: 20px;
 
-    & > * {
+    &>* {
         display: flex;
         align-items: center;
         gap: 20px;
@@ -163,6 +163,7 @@ header {
 
     & #interact {
         justify-content: flex-end;
+
         & button {
             background-color: var(--nav-color);
             color: white;
@@ -202,7 +203,7 @@ main {
             flex-direction: column;
             border-left: 7px solid var(--flair-color);
         }
-            
+
         & .project-interact {
             display: flex;
             justify-content: flex-end;
@@ -216,7 +217,7 @@ main {
                 height: 20px;
             }
         }
-        
+
         & p {
             color: rgb(105, 105, 105);
             display: -webkit-box;
@@ -273,7 +274,7 @@ main {
                     font-size: 0.85em;
                 }
             }
-            
+
         }
     }
 

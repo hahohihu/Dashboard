@@ -184,16 +184,21 @@ main {
         box-shadow: 1px 1px 3px 1px rgba(125, 125, 125, 0.267);
         display: flex;
         flex-direction: column;
+    }
 
-        & p {
-            color: rgb(105, 105, 105);
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-            text-overflow: ellipsis;
-            overflow: hidden;
+    & #projects {
+        grid-area: projects;
+
+        & #project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
 
+        & .card {
+            border-left: 7px solid var(--flair-color);
+        }
+            
         & .project-interact {
             display: flex;
             justify-content: flex-end;
@@ -207,19 +212,14 @@ main {
                 height: 20px;
             }
         }
-    }
-
-    & #projects {
-        grid-area: projects;
-
-        & #project-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
-        }
-
-        & .card {
-            border-left: 7px solid var(--flair-color);
+        
+        & p {
+            color: rgb(105, 105, 105);
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
     }
 

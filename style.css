@@ -78,7 +78,7 @@ nav {
     }
 
     & a {
-        padding: 5px 15px 5px 15px;
+        padding: 5px 15px;
         color: inherit;
         text-decoration: inherit;
         display: flex;
@@ -200,7 +200,7 @@ main {
             display: flex;
             justify-content: flex-end;
             margin-top: auto;
-            gap: 10px;
+            gap: 15px;
             padding-top: 10px;
 
             & img {

@@ -165,11 +165,6 @@ header {
 
     & #personal {
         margin-left: auto;
-        @media (max-width: 750px) {
-            & #name {
-                display: none;
-            }
-        }
     }
 }
 

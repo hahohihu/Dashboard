@@ -148,7 +148,7 @@ header {
         width: 30px;
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 650px) {
         & #searchbar {
             display: none;
         }

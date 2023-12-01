@@ -185,13 +185,10 @@ main {
         border-radius: 5px;
         padding: 20px;
         box-shadow: 1px 1px 3px 1px rgba(125, 125, 125, 0.267);
-        display: flex;
-        flex-direction: column;
     }
 
     & #projects {
         flex: 1 1 auto;
-        grid-area: projects;
 
         & #project-container {
             display: grid;
@@ -201,6 +198,8 @@ main {
         }
 
         & .card {
+            display: flex;
+            flex-direction: column;
             border-left: 7px solid var(--flair-color);
         }
             
@@ -236,8 +235,6 @@ main {
         gap: 20px;
 
         & #announcements {
-            grid-area: announcements;
-
             & .announcement {
                 padding: 8px;
             }
@@ -254,7 +251,23 @@ main {
         }
 
         & #trending {
-            grid-area: trending;
+            & .card {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            & .user {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+
+                & p {
+                    color: rgb(105, 105, 105);
+                    font-size: 0.85em;
+                }
+            }
+            
         }
     }
 

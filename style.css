@@ -78,7 +78,7 @@ nav {
     }
 
     & a {
-        padding: 5px 50px 5px 15px;
+        padding: 5px 15px 5px 15px;
         color: inherit;
         text-decoration: inherit;
         display: flex;
@@ -87,8 +87,20 @@ nav {
         & svg {
             height: 40px;
             width: 40px;
-            margin-right: 15px;
+            @media (min-width: 1000px) {
+                margin-right: 15px;
+            }
         }
+
+        & div {
+            margin: auto 0;
+            padding-right: 35px;
+
+            @media (max-width: 999px) {
+                display: none;
+            }
+        }
+
     }
 
     & a:hover {

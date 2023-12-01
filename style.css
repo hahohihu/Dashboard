@@ -176,13 +176,7 @@ header {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 3fr 350px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "projects announcements"
-        "projects trending";
-    
+    display: flex;
     padding: 20px;
     gap: 40px;
 
@@ -196,6 +190,7 @@ main {
     }
 
     & #projects {
+        flex: 1 1 auto;
         grid-area: projects;
 
         & #project-container {
@@ -233,26 +228,34 @@ main {
         }
     }
 
-    & #announcements {
-        grid-area: announcements;
+    & aside {
+        flex: 0 0 300px;
 
-        & .announcement {
-            padding: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        & #announcements {
+            grid-area: announcements;
+
+            & .announcement {
+                padding: 8px;
+            }
+
+            & p {
+                color: rgb(105, 105, 105);
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                font-size: 0.85em;
+            }
         }
 
-        & p {
-            color: rgb(105, 105, 105);
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            font-size: 0.85em;
+        & #trending {
+            grid-area: trending;
         }
-    }
-
-    & #trending {
-        grid-area: trending;
     }
 
 }

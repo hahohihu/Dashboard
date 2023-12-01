@@ -164,9 +164,17 @@ header {
 
     & #personal {
         justify-content: flex-end;
+        @media (max-width: 750px) {
+            & #name {
+                display: none;
+            }
+        }
     }
 
     & #greeting {
+        @media (max-width: 750px) {
+            display: none;
+        }
         & p {
             font-weight: 700;
         }

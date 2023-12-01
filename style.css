@@ -182,9 +182,25 @@ main {
         border-radius: 5px;
         padding: 20px;
         box-shadow: 1px 1px 3px 1px rgba(125, 125, 125, 0.267);
+        display: flex;
+        flex-direction: column;
 
         & p {
             color: rgb(105, 105, 105);
+        }
+
+        & .project-interact {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: auto;
+            gap: 20px;
+            padding-top: 10px;
+
+            & img {
+                width: 20px;
+                opacity: 0.8;
+                height: 20px;
+            }
         }
     }
 

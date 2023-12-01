@@ -187,6 +187,11 @@ main {
 
         & p {
             color: rgb(105, 105, 105);
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
 
         & .project-interact {
